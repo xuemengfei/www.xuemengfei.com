@@ -137,12 +137,9 @@ body {
   width: 120px;
   height: 120px;
   margin: 35px 0 0 35px;
+  *margin-left: 0;
   border: 5px solid #fff;
   border-radius: 50%;
-}
-
-.links ul {
-  margin-top: 0;
 }
 
 .links li {
@@ -154,10 +151,15 @@ body {
 .links a {
   display: block;
   width: 34px;
-  height: 43px;
+  height: 34px;
   font-size: 24px;
   line-height: 1em;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.links a:hover {
+  -webkit-transform: scale(1.1);
 }
 
 @media only screen and (max-width: 960px) {
